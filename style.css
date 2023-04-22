@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color:  hsl(221, 100%, 96%);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 98%;
+}
+.cards{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    gap: 5%;
+    border-radius: 20px;
+}
+.cards .card_1{
+    width: 47.5%;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 20% 44% 14% 17%;
+    border-radius: 20px;
+    color: white;
+}
+.cir{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 23vh;
+    height: 23vh;
+    border-radius: 50%;
+    display: grid;
+    grid-template-rows: 16vh;
+}
+.card_1 h2{
+    align-self: flex-end;
+    font-weight: 700;
+}
+.cir h2{
+    align-self: flex-end;
+    font-size: 60px;
+    font-weight: 800;
+}
+.card_1>p{
+    width: 37vh;
+    font-size: small;
+}
+.cards .card_2{
+    width: 43.5%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 21% 14.5% 14.5% 14.5% 14.5% 21%;
+
+}
+.result{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+    gap:35%;
+    border-radius: 5px;
+}
+.ico-name{
+    display: flex;
+    gap: 10%;
+}
+input[type = submit]{
+    width: 100%;
+    height: 6vh;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color:  hsl(224, 30%, 27%);
+    color: white;
+    transition: all 0.4s;
+}
+input[type = submit]:hover{
+    background-color: hsl(241, 81%, 54%);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-size: medium;
+    color: rgb(177, 177, 177);
+}
+span{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+@media screen and (max-width: 875px){
+    body{
+        background-color: white;
+    }
+    .cards{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 1%;
+    }
+    .cards .card_1{
+        width: 100%;
+        height: 45%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .card_1>P{
+        font-size: 14px;
+    }
+    .cir{
+        width: 22vh;
+        height: 19vh;
+        grid-template-rows: 12vh;
+    }
+    .cards .card_2{
+        margin-left: 5%;
+        width: 90%;
+        height: 55%;grid-template-rows: 16% 16% 16% 16% 16% 20%;
+    }
+}
